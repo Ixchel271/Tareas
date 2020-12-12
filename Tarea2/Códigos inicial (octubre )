@@ -1,0 +1,33 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+
+
+int main(void)
+{
+ string name = get_string("¿Cual es tu nombre?\n");
+ 
+ int edad = get_int("¿Cual es tu edad?\n");
+ 
+ const char sexo = get_char("¿Cual es tu sexo? (m o f)\n");
+ 
+ float decimal = get_float("Di un numero con decimales \n");
+ 
+ long edad_segundos; 
+ edad_segundos = edad * 31536000;
+ 
+ float decimal_cuadrado ;
+ decimal_cuadrado = decimal * decimal;
+ 
+ char femenino[] = "f";
+ char  masculino[] = "m";
+ 
+if(sexo == 'f') {
+    printf("Me llamo %s,tengo %ld segundos de vida, soy mujer, y el cuadrado de %f es %f",name ,edad_segundos ,decimal ,decimal_cuadrado);
+    
+ }
+else {
+    printf("Me llamo %s,tengo %ld segundos de vida, soy mujer, y el cuadrado de %f es %f",name ,edad_segundos ,decimal ,decimal_cuadrado);
+}
+
+}
